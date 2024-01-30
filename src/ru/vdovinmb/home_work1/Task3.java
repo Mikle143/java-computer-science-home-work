@@ -26,11 +26,11 @@ public class Task3 {
         s2=square(a2,b2);
         compare(s1,s2);
     }
-    public static double square(int a, int b){
+    private static double square(int a, int b){
         return a*b/2;
     }
 
-    public static void compare(double s1, double s2){
+    private static void compare(double s1, double s2){
         if (s1>s2){
             System.out.println("первый треугольник больше второго");
         } else if (s1==s2){

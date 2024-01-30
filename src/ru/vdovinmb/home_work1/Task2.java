@@ -21,16 +21,23 @@ public class Task2 {
         double operand1=5.0;
         double operand2=3.0;
         char operation='/';
-        function(operand1,operand2,operation);
+        calculate(operand1,operand2,operation);
     }
-    public static void function (double op1, double op2, char operation){
+    private static void calculate (double op1, double op2, char operation){
         switch (operation){
             case '+'-> System.out.println(op1+op2);
             case '-'-> System.out.println(op1-op2);
             case '*'-> System.out.println(op1*op2);
-            case '/'-> System.out.println(op1/op2);
+            case '/'-> System.out.println(division(op1, op2));
             case '%'-> System.out.println(op1%op2);
             default -> System.out.println("Invalid operation");
         }
     }
+    private static double division (double op1, double op2){
+        if (op2==0){
+            throw new ArithmeticException("Деление на ноль запрещено");
+        }
+        return op1/op2;
+    }
+
 }

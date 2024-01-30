@@ -12,14 +12,14 @@ public class Task1 {
         int minutes=15;
         function(minutes);
     }
-    public static void function (int min){
-        if (min>=0&&min<15){
+    private static void function (int min){
+        if (min >= 0 && min < 15){
             System.out.println("число попадает в первую четверть часа");
-        } else if (min>=15&&min<30) {
+        } else if (min >= 15 && min < 30) {
             System.out.println("число попадает во вторую четверть часа");
-        } else if (min>=30&&min<45) {
+        } else if (min >= 30 &&min <45) {
             System.out.println("число попадает в третью четверть часа");
-        } else if (min>=45&&min<60) {
+        } else if (min >= 45 && min < 60) {
             System.out.println("число попадает в четвертую четверть часа");
         } else System.out.println("Invalid minutes");
     }
