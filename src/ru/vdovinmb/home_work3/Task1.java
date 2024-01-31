@@ -19,6 +19,7 @@ public class Task1 {
         int[] array = new int[]{2, 3, 4, 5, -5, -7, 3, 0, 0};
         System.out.println(Arrays.toString(delete(array)));
     }
+
     private static int[] delete(int[] array) {
         int lengt = 0;
         for (int i = 0; i < array.length; i++) {

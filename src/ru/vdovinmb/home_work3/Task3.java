@@ -19,7 +19,7 @@ import java.util.Arrays;
  */
 public class Task3 {
     public static void main(String[] args) {
-        int[] array = new int[]{2, 3, 0, 0, -5, -4};
+        int[] array = new int[]{2, 3, 0, 0, -5, -4} ;
         System.out.println(Arrays.deepToString(divide(array)));
     }
 
